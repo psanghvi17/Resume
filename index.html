@@ -11,8 +11,11 @@
     <link href="css/aos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-    <script type="text/javascript"> 
-      submittobackend(){alert("Hello")}
+    <script>
+      function myFunction() {
+
+        document.getElementById("demo").innerHTML = "Thanks for your message, I'll call you within 24 hours. :)";
+      }
     </script>
   </head>
   <body id="top">
@@ -65,7 +68,7 @@
             <div class="h4 mt-0 title">About</div>
             <p>Hello! I am Pranay Sanghvi. Software Engineer.</p>
             <p>I am an Applications Engineer passionate about developing products to help solve problems in our community. I have approx. 2 years of professional software development experience working with IBM GTS Labs . Here we are developing micro-services based product which demands me to have skills in containers and other related tools. My career started as a simple web developer during my bachelors where I was involved in web development activities for our college clubs but has now evolved into the person making key decisions that affect the state of the product.</p> 
-            <p>I have keen interest in machine learning and related fields which was introduced to me during my masters, talking of which I did M.Tech. from IIT Guwahati in Computer Science and did my thesis in Information Retrieval using several Machine Learning techniques, prior to which I did my B.E. in Information Technology From IET-DAVV which is an autonomous govt. college in Indore(M.P.). <a href="https://templateflip.com/templates/creative-cv/" target="_blank">Learn More</a></p>
+            <p>I have keen interest in machine learning and related fields which was introduced to me during my masters, talking of which I did M.Tech. from IIT Guwahati in Computer Science and did my thesis in Information Retrieval using several Machine Learning techniques, prior to which I did my B.E. in Information Technology From IET-DAVV which is an autonomous govt. college in Indore(M.P.). 
           </div>
         </div>
         <div class="col-lg-6 col-md-12">
@@ -407,6 +410,13 @@
                       </div>
                       <div class="row mb-3">
                         <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                            <input class="form-control" type="text" name="contact" id="contact" placeholder="Phone Number" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
                           <div class="form-group">
                             <textarea class="form-control" name="message" id="message" placeholder="Your Message" required="required"></textarea>
                           </div>
@@ -414,8 +424,8 @@
                       </div>
                       <div class="row">
                         <div class="col">
-                          <input type="submit" value="submit" onclick="submittobackend();" />
-                          
+                          <button onclick="myFunction()">Submit</button>
+                            <p id="demo"></p>
                         </div>
                       </div>
                     </form>
